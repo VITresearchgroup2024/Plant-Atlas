@@ -3,7 +3,7 @@
 ```
 plant-virus-atlas/
 ├── README.md # Intro to the Plant Virus Atlas, features, citations
-├── LICENSE # License info (e.g., MIT or CC-BY 4.0)
+├── LICENSE # License info 
 ├── .gitignore # Files/folders to ignore during Git operations
 ├── data/
 │ ├── raw/ # Unprocessed raw datasets
