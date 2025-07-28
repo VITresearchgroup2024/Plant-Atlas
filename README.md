@@ -1,47 +1,49 @@
-﻿# Plant Virus Atlas
- 
+## 📁 Project Structure
+
+```
 plant-virus-atlas/
 │
-├── README.md                  <- Intro to the Plant Virus Atlas, features, citations
-├── LICENSE                    <- License info (e.g., MIT or CC-BY 4.0)
-├── .gitignore
+├── README.md # Intro to the Plant Virus Atlas, features, citations
+├── LICENSE # License info 
+├── .gitignore # Files/folders to ignore during Git operations
 │
-├── data/
-│   ├── raw/                   <- Unprocessed raw datasets
-│   ├── processed/             <- Cleaned/filtered data
-│   └── metadata/              <- Source metadata, sample sheets
+├── data/ # All datasets used
+│ ├── raw/ # Unprocessed raw datasets
+│ ├── processed/ # Cleaned/filtered data ready for use
+│ └── metadata/ # Sample sheets, source references, etc.
 │
-├── scripts/
-│   ├── fetch_ncbi.py          <- Fetch virus, host, and sequence data
-│   ├── clean_data.py
-│   ├── sequence_annotation.py
-│   ├── docking_pipeline.py
-│   └── model_training.py
+├── scripts/ # Data processing, modeling, and utilities
+│ ├── fetch_ncbi.py # Fetch virus, host, and sequence data
+│ ├── clean_data.py # Clean and preprocess data
+│ ├── sequence_annotation.py # Annotate functional regions
+│ ├── docking_pipeline.py # Structural modeling (docking, MD)
+│ └── model_training.py # Train spillover risk prediction model
 │
-├── notebooks/
-│   ├── exploration/
-│   ├── modeling/
-│   └── prediction_demo.ipynb
+├── notebooks/ # Jupyter notebooks for exploration and demos
+│ ├── exploration/ # EDA, plots, data summaries
+│ ├── modeling/ # Model prototyping
+│ └── prediction_demo.ipynb # End-to-end prediction example
 │
-├── models/
-│   ├── spillover_model.pkl
-│   ├── interaction_model.pkl
-│   └── md_simulation_results/
+├── models/ # Trained ML models and MD outputs
+│ ├── spillover_model.pkl
+│ ├── interaction_model.pkl
+│ └── md_simulation_results/
 │
-├── db/
-│   ├── schema.sql             <- Database schema
-│   ├── load_data.py
-│   └── queries/
+├── db/ # Local database and loading utilities
+│ ├── schema.sql # SQL schema for SQLite or Neo4j
+│ ├── load_data.py # Scripts to populate the database
+│ └── queries/ # Reusable query templates
 │
-├── app/
-│   ├── streamlit_app.py       <- Frontend app
-│   ├── pages/                 <- Multi-page support (e.g., region view, virus view)
-│   └── assets/
+├── app/ # Streamlit app for visualization
+│ ├── streamlit_app.py # Main entry point
+│ ├── pages/ # Multi-page support (optional)
+│ └── assets/ # Icons, images, or frontend assets
 │
-├── docs/
-│   ├── schema.md              <- Documentation of data model
-│   ├── usage.md
-│   └── contributing.md
+├── docs/ # Project documentation
+│ ├── schema.md # Explanation of data schema
+│ ├── usage.md # How to use scripts/app/models
+│ └── contributing.md # Contribution guidelines
 │
-└── tests/
-    └── test_pipeline.py
+└── tests/ # Unit and integration tests
+└── test_pipeline.py
+```
