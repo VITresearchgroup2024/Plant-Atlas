@@ -11,4 +11,3 @@ st.markdown("""
 - [Viroids Folder](https://github.com/VITresearchgroup2024/Plant-Atlas/tree/main/data/pathogen/viroids)
 - [Virus Folder](https://github.com/VITresearchgroup2024/Plant-Atlas/tree/main/data/pathogen/virus)
 """, unsafe_allow_html=True)
-
